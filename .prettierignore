@@ -1,0 +1,3 @@
+# 忽略格式化文件 
+node_modules
+dist

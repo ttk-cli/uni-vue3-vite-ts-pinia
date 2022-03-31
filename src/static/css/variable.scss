@@ -1,0 +1,19 @@
+@mixin trim($numLines: null) {
+  @if $numLines != null {
+    display: flex;
+    overflow-y: hidden;
+    -webkit-line-clamp: $numLines;
+    -webkit-box-orient: vertical;
+  } @else {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.line1 {
+  @include trim;
+}
+.line2 {
+  @include trim(2);
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body {
+  height: 100%;
+  font-size: 28rpx;
+  color: #333;
+}
+page {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  height: 100%;
+  font-size: 28rpx;
+  color: #333;
+}
+button {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  line-height: normal;
+}
+button::after {
+  border: 0;
+}
+radio {
+  .wx-radio-input {
+    border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .wx-radio-input.wx-radio-input-checked {
+    border: 1px solid #e93323 !important;
+    background-color: #e93323 !important;
+  }
+  .uni-radio-input {
+    border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .uni-radio-input.uni-radio-input-checked {
+    border: 1px solid #e93323 !important;
+    background-color: #e93323 !important;
+  }
+}
+checkbox {
+  .wx-checkbox-input {
+    border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .wx-checkbox-input.wx-checkbox-input-checked {
+    border: 1px solid #e93323 !important;
+    background-color: #e93323 !important;
+    color: #fff !important;
+  }
+  .wx-checkbox-input.wx-checkbox-input-checked::before {
+    font-size: 35rpx;
+  }
+  .uni-checkbox-input {
+    border-radius: 50%;
+    width: 38rpx;
+    height: 38rpx;
+  }
+  .uni-checkbox-input.uni-checkbox-input-checked::before {
+    font-size: 35rpx;
+  }
+}
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0.5;
+}
+@keyframes load {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
