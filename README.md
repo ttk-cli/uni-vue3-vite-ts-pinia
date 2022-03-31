@@ -1,15 +1,21 @@
 ---
-theme:github
-highlight:channing-cyan
+# 主题列表: juejin (默认主题),github,smartblue,cyanosis,channing-cyan
+# 高亮列表: vs2015,vs,atom-one-dark,atom-one-dark-reasonable,monokai-sublime
+theme: channing-cyan
+highlight: atom-one-dark
 ---
 
 # uni-vue3-vite-ts-pinia 项目工程化搭建
 
-# 简介
+## 简介
 
-从零搭建 `uni-app + vue3.x` 项目工程环境，集成 `ESLint`、`Prettier`、`Stylelint`、`husky`、`lint-staged` 、`commitlint`等。
+`uni-app + vue3.x` 项目工程化搭建，集成 `ESLint`、`Prettier`、`Stylelint`、`husky`、`lint-staged` 、`commitlint`等，同时实现了 pinia 在 uniapp 中的持久化插件[pinia-plugin-persist-uni](https://github.com/Allen-1998/pinia-plugin-persist-uni)。
 
-[仓库地址 - github](https://github.com/Allen-1998/uni-vue3-vite-ts-pinia)，欢迎使用和点亮小星星。
+[相关文章 - uni-vue3-vite-ts-pinia 项目工程化搭建](https://juejin.cn/post/7081243515459485704/)
+
+[相关文章 - pinia-plugin-persist-uni 在 uni-app 中持久化存储 pinia](https://juejin.cn/post/7081275565008748552/)
+
+欢迎使用和点亮小星星。
 
 ## 所用技术栈
 
@@ -24,9 +30,10 @@ highlight:channing-cyan
 - 提交规范：
   - [husky](https://typicode.github.io/husky/#/)
   - [lint-staged](https://www.npmjs.com/package/lint-staged)
+  - [commitlint](https://commitlint.js.org/#/)
 - css 预处理器： [scss](https://sass-lang.com/)
 - 状态管理工具：[pinia](https://pinia.vuejs.org/)
-- pinia 数据持久化插件：[pinia-plugin-persist-uni](https://github.com/Allen-1998/pinia-plugin-persist-uni/)
+- pinia 数据持久化插件：[pinia-plugin-persist-uni](https://allen-1998.github.io/pinia-plugin-persist-uni/)
 - vite 插件：
   - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import)
   - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
