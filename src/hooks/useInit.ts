@@ -1,5 +1,4 @@
 import { parseUrl } from '@/utils/shared'
-import { onHide, onShow } from '@dcloudio/uni-app'
 
 export function useInit() {
   onShow(() => {

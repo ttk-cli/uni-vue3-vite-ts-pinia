@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onLaunch, onShow, onHide } from '@dcloudio/uni-app'
 import env from '@/config/env'
 import { useAppStore } from './store/app'
 onLaunch(() => {

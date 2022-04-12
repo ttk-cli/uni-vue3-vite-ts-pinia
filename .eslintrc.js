@@ -153,5 +153,8 @@ module.exports = {
     defineExpose: 'readonly',
     withDefaults: 'readonly',
     uni: true,
+    onLaunch: 'readonly',
+    onShow: 'readonly',
+    onHide: 'readonly',
   },
 }
