@@ -40,7 +40,7 @@ function reject(err: { errno: number; errmsg: string }) {
 // h5环境开启代理
 const apiBaseUrl = isH5 && isDevelopment ? '/api' : env.apiBaseUrl
 
-function baseRequest(method: RequestOptionsMethod, url: string, data: any) {
+function baseRequest(method, url: string, data: any) {
   console.log(method, url, data)
   return new Promise((resolve) => {
     showLoading(data.isLoading)
@@ -86,10 +86,7 @@ function baseRequest(method: RequestOptionsMethod, url: string, data: any) {
   })
 }
 
-type Methods = 'get' | 'post'
-type RequestOptionsMethod = 'GET' | 'POST'
-
-const http: { [key in Methods]: Function } = {
+const http = {
   get: (api, params) => baseRequest('GET', api, { ...getCommonParams(), ...params }),
   post: (api, params) => baseRequest('POST', api, { ...getCommonParams(), ...params }),
 }

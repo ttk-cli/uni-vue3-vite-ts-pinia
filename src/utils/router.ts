@@ -29,7 +29,7 @@ export function onUrlPage(e) {
   }
 }
 
-export function forward(name: string, query: any = {}) {
+export function forward(name: string, query: Types.Query = {}) {
   if (needAuthPath.includes(name)) return forward('login')
   const targetPage = pagesMap.find((i) => i.name === name)
   if (!targetPage) return

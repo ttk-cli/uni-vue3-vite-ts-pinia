@@ -1,4 +1,4 @@
-const apiEnv = 'dev'
+const apiEnv: ApiEnv = 'dev'
 
 const envMap = {
   dev: {
@@ -19,10 +19,14 @@ const envMap = {
   },
 }
 
-type Env = { apiEnv: string; baseUrl: string; apiBaseUrl: string }
+type ApiEnv = keyof typeof envMap
+type Env<T extends ApiEnv> = {
+  apiEnv: T
+} & typeof envMap[T]
 
-function createEnv(apiEnv): Env {
+function createEnv(apiEnv: ApiEnv): Env<typeof apiEnv> {
   return Object.assign({ apiEnv }, envMap[apiEnv])
 }
 
-export default createEnv(apiEnv)
+const env = createEnv(apiEnv)
+export default env

@@ -2,11 +2,6 @@
 
 import { defineStore } from 'pinia'
 
-export type userInfo = {
-  token: string
-  user_id: Number
-}
-
 export const useUserStore = defineStore({
   id: 'user',
   state: () => {
@@ -16,7 +11,7 @@ export const useUserStore = defineStore({
         user_id: 111,
       },
     } as {
-      userInfo: userInfo
+      userInfo: User.UserInfo
     }
   },
   getters: {

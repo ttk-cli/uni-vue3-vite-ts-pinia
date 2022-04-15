@@ -8,7 +8,7 @@ export function useInit() {
     console.log('Page Hide')
   })
   const pages = getCurrentPages()
-  const page: any = pages[pages.length - 1]
+  const page = pages[pages.length - 1] as Types.Page
   const { fullPath } = page.$page
   const { name: pageName, path: pagePath, query: pageQuery } = parseUrl(fullPath)
 
