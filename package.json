@@ -64,7 +64,7 @@
     "@typescript-eslint/eslint-plugin": "4.15.1",
     "@typescript-eslint/parser": "4.15.1",
     "@vue/eslint-config-typescript": "7.0.0",
-    "autoprefixer": "10.4.2",
+    "autoprefixer": "10.4.4",
     "commitlint": "16.2.3",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
