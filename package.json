@@ -52,7 +52,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3040720220422004",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3040720220422004",
     "pinia": "2.0.13",
-    "pinia-plugin-persist-uni": "1.0.4",
+    "pinia-plugin-persist-uni": "^1.0.5",
     "sass": "1.49.9",
     "vue": "3.2.33"
   },
