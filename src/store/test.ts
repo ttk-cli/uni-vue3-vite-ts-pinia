@@ -7,13 +7,13 @@ export const useTestStore = defineStore({
   persist: {
     // 开启持久化
     enabled: true,
-    // H5Storage: localStorage,
-    // strategies: [
-    //   {
-    //     key: 'test',
-    //     storage: sessionStorage,
-    //   },
-    // ],
+    H5Storage: window?.localStorage,
+    strategies: [
+      {
+        key: 'test',
+        storage: window?.sessionStorage,
+      },
+    ],
   },
   state: () => {
     return {
