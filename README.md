@@ -37,6 +37,7 @@ highlight: atom-one-dark
 - vite 插件：
   - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import)
   - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+  - [unocss](https://github.com/unocss/unocss)
 
 ## 工程目录
 
@@ -91,5 +92,6 @@ highlight: atom-one-dark
 ├── README.md
 ├── TODO.md
 ├── tsconfig.json ts配置
+├── unocss.config.ts unocss配置
 └── vite.config.ts vite配置
 ```
