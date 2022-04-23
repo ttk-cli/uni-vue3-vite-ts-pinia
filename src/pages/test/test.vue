@@ -12,7 +12,8 @@
       <view @click="setCommonParam">setCommonParams</view>
       <view @click="uniAsyncTest">uniAsyncTest</view>
       <view data-url="index?a=1" @click="onUrlPage">onUrlPage</view>
-      <view v-for="i in 20" :key="i">scroll Test</view>
+      <view class="unocss-test">unocss-test</view>
+      <view v-for="i in 20" :key="i" class="p10">scroll Test</view>
     </template>
   </pullList>
 </template>
@@ -72,7 +73,7 @@ function onScrollToLower() {
 </script>
 
 <style lang="scss" scoped>
-view {
-  padding: 10px;
+.unocss-test {
+  padding: 10rpx;
 }
 </style>

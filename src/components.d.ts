@@ -5,8 +5,6 @@
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     PullList: typeof import('./components/pullList.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
   }
 }
 
