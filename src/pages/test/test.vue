@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts" setup name="test">
-import { useTestStore } from '@/store/test'
+import { useSetupStore } from '@/store/setup'
 import { storeToRefs } from 'pinia'
 import { useTitle } from '@/hooks/useTitle'
 import apiTest from '@/api/apiTest'
@@ -33,7 +33,7 @@ console.log(pageName, pagePath, pageQuery, 'pageName,pagePath, pageQuery')
 
 const { title, changeTitle } = useTitle()
 
-const testStore = useTestStore()
+const testStore = useSetupStore()
 const { name, fullName } = storeToRefs(testStore)
 
 function updateName() {
