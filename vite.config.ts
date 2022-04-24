@@ -16,7 +16,7 @@ export default defineConfig({
   plugins: [
     AutoImport({
       dts: 'src/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
-      imports: ['vue', { '@dcloudio/uni-app': ['onLaunch', 'onShow', 'onHide'] }],
+      imports: ['vue', 'uni-app'],
     }),
     Components({
       // 指定组件位置，默认是src/components
