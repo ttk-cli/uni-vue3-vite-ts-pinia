@@ -1,0 +1,21 @@
+{
+  "init Store": {
+    "scope": "typescript",
+    "prefix": "s",
+    "body": [
+      "import { defineStore } from 'pinia'\n",
+      "export const use$1Store = defineStore({",
+      "  id: '$2',",
+      "  persist: {",
+      "    enabled: true,",
+      "  },",
+      "  state: () => {",
+      "    return {$3}",
+      "  },",
+      "  getters: {$4},",
+      "  actions: {$5},",
+      "})\n"
+    ],
+    "description": "状态管理模板"
+  }
+}
