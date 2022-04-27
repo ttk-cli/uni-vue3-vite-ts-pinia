@@ -46,10 +46,13 @@ async function getTest() {
       title: '自定义异常处理',
     })
   }
+  // getTest.data?.age
+  // getTest.data?.name
   console.log(getTest, 'getTest')
 }
 async function postTest() {
   const postTest = await apiTest.postTest({ a: 1 })
+  // postTest.data?.val
   console.log(postTest, 'postTest')
 }
 
