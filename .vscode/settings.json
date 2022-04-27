@@ -5,7 +5,7 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "stylelint.validate": ["css", "scss", "vue"],
+  "stylelint.validate": ["css", "scss", "vue", "html"],
   "eslint.validate": ["typescript", "vue", "html", "json"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "json.format.enable": false,

@@ -2,24 +2,7 @@ import env from '@/config/env'
 import { getCommonParams } from '@/config/commonParams'
 import { isH5, isDevelopment } from './platform'
 import { forward } from './router'
-
-let loadingCount = 0
-
-function showLoading(isLoading) {
-  if (isLoading) {
-    uni.showLoading({
-      title: '加载中',
-    })
-    loadingCount = loadingCount + 1
-  }
-}
-
-function hideLoading() {
-  loadingCount = loadingCount - 1
-  if (loadingCount === 0) {
-    uni.hideLoading()
-  }
-}
+import { showLoading, hideLoading } from '@/config/serviceLoading'
 
 function reject(err: { errno: number; errmsg: string }) {
   const { errmsg = '抢购火爆，稍候片刻！', errno = -1 } = err
