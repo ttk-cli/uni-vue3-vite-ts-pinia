@@ -1,7 +1,3 @@
-//src/store/test.ts
-
-import { defineStore } from 'pinia'
-
 export const useTestStore = defineStore({
   id: 'test',
   persist: {

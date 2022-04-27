@@ -1,6 +1,5 @@
 import { APP_ID, APP_VERSION } from './app'
 import { useUserStore } from '@/store/user'
-import { storeToRefs } from 'pinia'
 import { useAppStore } from '@/store/app'
 
 const userStore = useUserStore()

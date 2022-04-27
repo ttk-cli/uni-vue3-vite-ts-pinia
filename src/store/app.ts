@@ -1,7 +1,3 @@
-// src/store/app.ts
-
-import { defineStore } from 'pinia'
-
 export const useAppStore = defineStore({
   id: 'app',
   state: () => {

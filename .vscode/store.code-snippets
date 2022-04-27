@@ -3,7 +3,6 @@
     "scope": "typescript",
     "prefix": "s",
     "body": [
-      "import { defineStore } from 'pinia'\n",
       "export const use$1Store = defineStore({",
       "  id: '$2',",
       "  persist: {",

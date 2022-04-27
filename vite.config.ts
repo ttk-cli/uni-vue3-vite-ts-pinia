@@ -16,7 +16,12 @@ export default defineConfig({
   plugins: [
     AutoImport({
       dts: 'src/auto-imports.d.ts', // 可以自定义文件生成的位置，默认是根目录下
-      imports: ['vue', 'uni-app'],
+      imports: ['vue', 'uni-app', 'pinia'],
+      eslintrc: {
+        enabled: true, // Default `false`
+        filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
+        globalsPropValue: 'readonly', // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+      },
     }),
     Components({
       // 指定组件位置，默认是src/components

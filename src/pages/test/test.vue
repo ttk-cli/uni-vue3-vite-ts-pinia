@@ -20,7 +20,6 @@
 
 <script lang="ts" setup name="test">
 import { useSetupStore } from '@/store/setup'
-import { storeToRefs } from 'pinia'
 import { useTitle } from '@/hooks/useTitle'
 import apiTest from '@/api/apiTest'
 import { getCommonParams, setCommonParams } from '@/config/commonParams'

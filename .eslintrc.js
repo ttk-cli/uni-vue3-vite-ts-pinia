@@ -14,6 +14,7 @@ module.exports = {
     // eslint-config-prettier 的缩写
     'prettier',
     'vue-global-api',
+    '.eslintrc-auto-import.json',
   ],
   parserOptions: {
     ecmaVersion: 12,
@@ -148,13 +149,6 @@ module.exports = {
     'no-async-promise-executor': 'warn',
   },
   globals: {
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
-    defineExpose: 'readonly',
-    withDefaults: 'readonly',
     uni: true,
-    onLaunch: 'readonly',
-    onShow: 'readonly',
-    onHide: 'readonly',
   },
 }
