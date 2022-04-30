@@ -1,6 +1,6 @@
 {
   "name": "uni-preset-vue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "npm run dev:mp-alipay",
     "build": "npm run build:mp-alipay",
