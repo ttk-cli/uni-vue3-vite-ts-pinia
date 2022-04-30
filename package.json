@@ -37,7 +37,8 @@
     "style": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
     "postinstall": "husky install",
     "add": "node ./auto/addPage.ts",
-    "cz": "git add . && cz"
+    "cz": "git add . && cz",
+    "tag": "npm version patch && git push && git push origin --tags"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3040720220422004",
