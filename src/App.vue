@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import env from '@/config/env'
-import { useAppStore } from './store/app'
+
 onLaunch(() => {
   console.log('App Launch')
   console.log(env.apiEnv, 'apiEnv')
-  const appStore = useAppStore()
+  const appStore = useStore('app')
   const systemInfo = appStore.getSystemInfo()
   console.log(systemInfo, 'systemInfo')
 })

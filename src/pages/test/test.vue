@@ -3,7 +3,7 @@
     <template #list>
       <view>name:{{ name }}</view>
       <view>fullName:{{ fullName }}</view>
-      <view @click="updateName">updateName</view>
+      <view @click="updateName('allen')">updateName</view>
       <view>title:{{ title }}</view>
       <view @click="changeTitle">changeTitle</view>
       <view @click="getTest">getTest</view>
@@ -18,13 +18,12 @@
   </pullList>
 </template>
 
-<script lang="ts" setup name="test">
-import { useSetupStore } from '@/store/setup'
-import { useTitle } from '@/hooks/useTitle'
+<script lang="ts" setup>
 import apiTest from '@/api/apiTest'
 import { getCommonParams, setCommonParams } from '@/config/commonParams'
-import { onUrlPage } from '@/utils/router'
 import { useInit } from '@/hooks/useInit'
+import { useTitle } from '@/hooks/useTitle'
+import { onUrlPage } from '@/utils/router'
 import uniAsync from '@/utils/uniAsync'
 
 const { pageName, pagePath, pageQuery } = useInit()
@@ -32,12 +31,7 @@ console.log(pageName, pagePath, pageQuery, 'pageName,pagePath, pageQuery')
 
 const { title, changeTitle } = useTitle()
 
-const testStore = useSetupStore()
-const { name, fullName } = storeToRefs(testStore)
-
-function updateName() {
-  testStore.updateName('333')
-}
+const { name, fullName, updateName } = useStore('setup')
 
 async function getTest() {
   const getTest = await apiTest.getTest({ a: 1 })

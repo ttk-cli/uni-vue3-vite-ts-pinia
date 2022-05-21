@@ -1,4 +1,4 @@
-export const useTestStore = defineStore({
+export default defineStore({
   id: 'test',
   persist: {
     // 开启持久化
@@ -23,7 +23,7 @@ export const useTestStore = defineStore({
     },
   },
   actions: {
-    updateName(name) {
+    updateName(name: string) {
       this.name = name
     },
   },

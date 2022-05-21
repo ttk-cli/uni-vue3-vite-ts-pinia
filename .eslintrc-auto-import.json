@@ -81,6 +81,7 @@
     "useCssModule": "readonly",
     "useCssVars": "readonly",
     "useSlots": "readonly",
+    "useStore": "readonly",
     "watch": "readonly",
     "watchEffect": "readonly"
   }

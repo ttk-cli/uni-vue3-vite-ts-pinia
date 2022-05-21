@@ -1,4 +1,4 @@
-export const useSetupStore = defineStore(
+export default defineStore(
   'setup',
   () => {
     const name = ref<string>('allen')

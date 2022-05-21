@@ -1,5 +1,5 @@
 declare namespace User {
-  type UserInfo = {
+  interface UserInfo {
     token: string
     user_id: Number
   }

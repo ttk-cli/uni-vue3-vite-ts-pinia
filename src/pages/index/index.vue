@@ -9,7 +9,7 @@
   </view>
 </template>
 
-<script setup lang="ts" name="index">
+<script setup lang="ts">
 import { useTitle } from '@/hooks/useTitle'
 import { forward } from '@/utils/router'
 

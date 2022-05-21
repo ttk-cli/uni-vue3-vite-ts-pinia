@@ -1,4 +1,4 @@
-export const useAppStore = defineStore({
+export default defineStore({
   id: 'app',
   state: () => {
     return {

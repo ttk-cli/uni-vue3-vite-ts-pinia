@@ -15,6 +15,7 @@ module.exports = {
     'prettier',
     'vue-global-api',
     '.eslintrc-auto-import.json',
+    '.eslintrc-auto-import-types.json',
   ],
   parserOptions: {
     ecmaVersion: 12,
@@ -25,8 +26,11 @@ module.exports = {
     },
   },
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
-  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  plugins: ['vue', '@typescript-eslint', 'prettier', 'import', 'simple-import-sort'],
   rules: {
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }], // 解决依赖问题
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

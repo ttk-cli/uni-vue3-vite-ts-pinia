@@ -1,8 +1,9 @@
-import env from '@/config/env'
 import { getCommonParams } from '@/config/commonParams'
-import { isH5, isDevelopment } from './platform'
+import env from '@/config/env'
+import { hideLoading, showLoading } from '@/config/serviceLoading'
+
+import { isDevelopment, isH5 } from './platform'
 import { forward } from './router'
-import { showLoading, hideLoading } from '@/config/serviceLoading'
 
 function reject(err: { errno: number; errmsg: string }) {
   const { errmsg = '抢购火爆，稍候片刻！', errno = -1 } = err

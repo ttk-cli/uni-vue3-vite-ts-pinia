@@ -1,12 +1,9 @@
 import { APP_ID, APP_VERSION } from './app'
-import { useUserStore } from '@/store/user'
-import { useAppStore } from '@/store/app'
 
-const userStore = useUserStore()
-const { token, userId } = storeToRefs(userStore)
+const { token, userId } = useStore('user')
 
-const appStore = useAppStore()
-const systemInfo = appStore.getSystemInfo()
+const { getSystemInfo } = useStore('app')
+const systemInfo = getSystemInfo()
 const { brand: device, screenWidth: swidth, screenHeight: sheight } = systemInfo
 
 const commonParams = {
