@@ -3,7 +3,7 @@
     "scope": "typescript",
     "prefix": "s",
     "body": [
-      "export const use$1Store = defineStore({",
+      "export default defineStore({",
       "  id: '$2',",
       "  persist: {",
       "    enabled: true,",
