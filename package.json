@@ -67,7 +67,7 @@
     "@typescript-eslint/eslint-plugin": "4.15.1",
     "@typescript-eslint/parser": "4.15.1",
     "@vue/eslint-config-typescript": "7.0.0",
-    "auto-import-types": "0.0.1",
+    "auto-import-types": "0.0.4",
     "autoprefixer": "10.4.4",
     "commitizen": "4.2.4",
     "commitlint": "16.2.3",
