@@ -1,5 +1,6 @@
 {
   "globals": {
+    "EffectScope": "readonly",
     "acceptHMRUpdate": "readonly",
     "computed": "readonly",
     "createApp": "readonly",
@@ -9,12 +10,13 @@
     "defineComponent": "readonly",
     "defineStore": "readonly",
     "effectScope": "readonly",
-    "EffectScope": "readonly",
     "getActivePinia": "readonly",
     "getCurrentInstance": "readonly",
     "getCurrentScope": "readonly",
     "h": "readonly",
     "inject": "readonly",
+    "isProxy": "readonly",
+    "isReactive": "readonly",
     "isReadonly": "readonly",
     "isRef": "readonly",
     "mapActions": "readonly",
@@ -83,6 +85,8 @@
     "useSlots": "readonly",
     "useStore": "readonly",
     "watch": "readonly",
-    "watchEffect": "readonly"
+    "watchEffect": "readonly",
+    "watchPostEffect": "readonly",
+    "watchSyncEffect": "readonly"
   }
 }
