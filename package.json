@@ -93,5 +93,8 @@
     "vite": "2.9.5",
     "vue-global-api": "0.4.1",
     "vue-tsc": "0.29.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
