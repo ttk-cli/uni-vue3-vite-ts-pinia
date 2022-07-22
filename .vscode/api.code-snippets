@@ -5,9 +5,9 @@
     "body": [
       "import axios from '@/utils/axios'\n",
       "const api$1 = {",
-      "  get$2: (data = {}) => axios.get('/$3', data),",
+      "  get$1: (data = {}) => axios.get('/$2', data),",
       "}\n",
-      "export default api$4\n"
+      "export default api$1\n"
     ],
     "description": "接口模板"
   }
