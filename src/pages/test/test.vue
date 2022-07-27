@@ -3,7 +3,7 @@
     <template #list>
       <view>name:{{ name }}</view>
       <view>fullName:{{ fullName }}</view>
-      <view @click="updateName('allen')">updateName</view>
+      <view @click="updateName('newName')">updateName</view>
       <view>title:{{ title }}</view>
       <view @click="changeTitle">changeTitle</view>
       <view @click="getTest">getTest</view>
@@ -26,8 +26,10 @@ import { useTitle } from '@/hooks/useTitle'
 import { onUrlPage } from '@/utils/router'
 import uniAsync from '@/utils/uniAsync'
 
-const { pageName, pagePath, pageQuery } = useInit()
-console.log(pageName, pagePath, pageQuery, 'pageName,pagePath, pageQuery')
+onLoad(() => {
+  const { pageName, pagePath, pageQuery } = useInit()
+  console.log(pageName, pagePath, pageQuery, 'pageName,pagePath, pageQuery')
+})
 
 const { title, changeTitle } = useTitle()
 

@@ -6,6 +6,13 @@
       "style": {
         "navigationBarTitleText": "首页"
       }
+    },
+    {
+      "name": "profile",
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人"
+      }
     }
   ],
   "subPackages": [
@@ -37,6 +44,10 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人"
       }
     ]
   }
