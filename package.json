@@ -71,7 +71,7 @@
     "auto-import-types": "0.0.4",
     "autoprefixer": "10.4.4",
     "commitizen": "4.2.4",
-    "commitlint": "16.2.3",
+    "commitlint": "16.3.0",
     "cz-customizable": "6.3.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
