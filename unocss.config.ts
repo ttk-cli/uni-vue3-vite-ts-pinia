@@ -1,4 +1,5 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno, Rule } from 'unocss'
+import presetRemToPx from '@unocss/preset-rem-to-px'
+import { defineConfig, Preset, presetAttributify, presetIcons, presetUno, Rule } from 'unocss'
 // https://github.com/unocss/unocss
 
 const sizeMapping: Record<string, string> = {
@@ -32,8 +33,15 @@ export const createConfig = () => {
       presetAttributify(),
       presetIcons({
         prefix: '',
-        // autoInstall: true,
+        extraProperties: {
+          display: 'inline-block',
+          cursor: 'pointer',
+          'font-size': '20px',
+        },
       }),
+      presetRemToPx({
+        baseFontSize: 4,
+      }) as Preset,
     ],
     include: [/\.vue$/, /pages.json$/],
     rules: getSizeRules(sizeMapping),
