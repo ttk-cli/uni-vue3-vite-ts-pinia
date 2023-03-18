@@ -1,5 +1,8 @@
 // "https://github.com/Allen-1998/pinia-auto-refs"
-import { AutoToRefs, ToRef } from 'vue'
+/* eslint-disable */
+/* prettier-ignore */
+// @ts-nocheck
+import type { AutoToRefs, ToRef } from 'vue'
 
 import appStore from '@/store/app'
 import setupStore from '@/store/setup'

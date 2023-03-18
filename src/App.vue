@@ -1,20 +1,14 @@
 <script setup lang="ts">
-import env from '@/config/env'
-
+import { onHide, onLaunch, onShow } from '@dcloudio/uni-app';
 onLaunch(() => {
-  console.log('App Launch')
-  console.log(env.apiEnv, 'apiEnv')
-  const appStore = useStore('app')
-  const systemInfo = appStore.getSystemInfo()
-  console.log(systemInfo, 'systemInfo')
-})
+  console.log('App Launch');
+});
 onShow(() => {
-  console.log('App Show')
-})
+  console.log('App Show');
+});
 onHide(() => {
-  console.log('App Hide')
-})
+  console.log('App Hide');
+});
 </script>
-<style lang="scss">
-@import 'static/css/index.scss';
-</style>
+
+<style></style>

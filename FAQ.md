@@ -8,18 +8,6 @@ vue3 配套的 vscode 插件为 volar,vetur 会存在冲突
 
 在扩展中搜索 volar 安装,然后搜索 vetur 设置禁用工作区
 
-### windows 拉取代码后 eslint 报错 Delete `␍`eslint
-
-**原因：**
-
-由于历史原因，windows 下和 linux 下的文本文件的换行符不一致。因此，文本文件在不同系统下创建和使用时就会出现不兼容的问题。
-
-**解决方法：**
-
-1.修改 git 全局配置 `git config --global core.autocrlf false` 2.重新拉取代码 3.在`settings.json`中新增配置项 `"files.eol": "\n"`,可以保证之后创建的文件都为 LF 格式
-
-[相关链接](https://juejin.cn/post/6844904069304156168)
-
 ### git commit 保存代码被拦截
 
 **原因：**

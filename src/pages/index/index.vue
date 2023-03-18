@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { useTitle } from '@/hooks/useTitle';
+import { forward } from '@/utils/router';
+
+const { title, changeTitle } = useTitle();
+function goTest() {
+  forward('test', {
+    a: 1
+  });
+}
+</script>
+
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png" />
@@ -8,18 +20,6 @@
     <view @click="goTest">测试页</view>
   </view>
 </template>
-
-<script setup lang="ts">
-import { useTitle } from '@/hooks/useTitle'
-import { forward } from '@/utils/router'
-
-const { title, changeTitle } = useTitle()
-function goTest() {
-  forward('test', {
-    a: 1,
-  })
-}
-</script>
 
 <style scoped lang="scss">
 .content {
