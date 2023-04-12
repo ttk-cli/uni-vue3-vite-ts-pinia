@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+const fs = require('fs')
 
 const pagesStr = fs.readFileSync('./src/pages.json', 'utf-8');
 const pagesJson = JSON.parse(pagesStr);
