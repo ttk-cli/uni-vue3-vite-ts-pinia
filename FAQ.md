@@ -1,4 +1,6 @@
-### vetur 提示组件引入报错
+# 常见问题
+
+## vetur 提示组件引入报错
 
 **原因：**
 
@@ -8,7 +10,7 @@ vue3 配套的 vscode 插件为 volar,vetur 会存在冲突
 
 在扩展中搜索 volar 安装,然后搜索 vetur 设置禁用工作区
 
-### git commit 保存代码被拦截
+## git commit 保存代码被拦截
 
 **原因：**
 
@@ -19,7 +21,7 @@ vue3 配套的 vscode 插件为 volar,vetur 会存在冲突
 按照 `commitlint.config.js` 文件中定义的规则进行`git commit`操作
 示例:`git commit -m 'feat: xxxxxx'`
 
-### 如何根据快速定义 ts 接口类型
+## 如何根据快速定义 ts 接口类型
 
 **原因：**
 
@@ -31,7 +33,7 @@ ts 类型声明在带来类型提示，减少编程过程中 bug 率的同时，
 
 [相关链接](http://json2ts.com/)
 
-### husky 未执行
+## husky 未执行
 
 **原因：**
 
@@ -46,7 +48,7 @@ ts 类型声明在带来类型提示，减少编程过程中 bug 率的同时，
   chmod +x ./.husky/commit-msg
   ```
 
-### 打包微信小程序运行报错 [ WXSS 文件编译错误] ./app.wxss unexpected token "*"
+## 打包微信小程序运行报错 [ WXSS 文件编译错误] ./app.wxss unexpected token "*"
 
 **原因：**
 

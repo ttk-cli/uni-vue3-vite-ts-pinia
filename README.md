@@ -14,6 +14,7 @@
 
 ## 所用技术栈
 
+- 依赖管理：node v16.x, 如果你已经使用 nvm，可以参考 [Github: nvm](https://github.com/nvm-sh/nvm#deeper-shell-integration) 来实现 node 版本的自动切换
 - 小程序框架： [uni-app](https://uniapp.dcloud.io/)
 - 构建工具： [Vite](https://vitejs.dev/)
 - 前端框架： [Vue3.x](https://v3.cn.vuejs.org/)
@@ -60,7 +61,6 @@
 │   ├── static 静态资源、css
 │   ├── store 状态管理
 │   └── utils 工具包
-│      ├── index.ts 入口文件
 │      ├── platform.ts 获取运行环境
 │      ├── request.ts 请求方法封装
 │      ├── router.ts 路由跳转封装
