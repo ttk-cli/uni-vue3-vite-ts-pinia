@@ -47,13 +47,3 @@ ts 类型声明在带来类型提示，减少编程过程中 bug 率的同时，
   chmod +x ./.husky/pre-commit
   chmod +x ./.husky/commit-msg
   ```
-
-## 打包微信小程序运行报错 [ WXSS 文件编译错误] ./app.wxss unexpected token "*"
-
-**原因：**
-
-`uniapp`打包自动生成的`app.wxss`中包含了微信小程序不支持使用的通配符
-
-**解决方法：**
-
-- 目前只能手动删除，看后期`uniapp`是否会优化

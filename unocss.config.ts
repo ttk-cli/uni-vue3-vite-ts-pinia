@@ -22,5 +22,8 @@ export default defineConfig({
       baseFontSize: 4
     }) as Preset
   ],
+  theme: {
+    preflightRoot: ['page,::before,::after']
+  },
   rules: getSizeRules(sizeMapping)
 });
