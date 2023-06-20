@@ -1,7 +1,7 @@
 {
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true,
   },
   "stylelint.validate": ["css", "scss", "vue", "html"],
@@ -9,5 +9,4 @@
   "files.associations": {
     "*.json": "jsonc"
   },
-  "volar.inlayHints.eventArgumentInInlineHandlers": false
 }
