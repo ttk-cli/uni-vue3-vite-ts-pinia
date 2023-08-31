@@ -29,6 +29,6 @@ module.exports = {
   },
 
   allowBreakingChanges: ['feat', 'fix'],
-  skipQuestions: ['customScope', 'body', 'breaking', 'footer'],
+  skipQuestions: ['scope','customScope', 'body', 'breaking', 'footer'],
   subjectLimit: 100,
 }
