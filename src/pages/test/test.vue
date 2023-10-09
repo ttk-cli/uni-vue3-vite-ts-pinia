@@ -6,10 +6,12 @@ import { useTitle } from '@/hooks/useTitle';
 import { onUrlPage } from '@/utils/router';
 import uniAsync from '@/utils/uniAsync';
 
-onLoad(() => {
-  const { pageName, pagePath, pageQuery } = useInit();
-  console.log(pageName, pagePath, pageQuery, 'pageName,pagePath, pageQuery');
-});
+type Query = {
+  a: number
+}
+
+const { pageName, pagePath, pageQuery } = useInit<Query>();
+// pageQuery.value.a
 
 const { title, changeTitle } = useTitle();
 
