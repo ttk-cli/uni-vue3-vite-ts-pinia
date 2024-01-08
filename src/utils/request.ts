@@ -40,7 +40,7 @@ function baseRequest(
   return new Promise((resolve) => {
     showLoading(data.isLoading);
     delete data.isLoading;
-    let responseDate: unknown;
+    let responseData: unknown;
     uni.request({
       url: apiBaseUrl + url,
       method,
@@ -55,7 +55,7 @@ function baseRequest(
       success: (res: any) => {
         if (res.statusCode >= 200 && res.statusCode < 400) {
           if (res.data.errno === 0) {
-            responseDate = res.data;
+            responseData = res.data;
           } else {
             reject(res.data);
           }
@@ -74,7 +74,7 @@ function baseRequest(
       },
       complete: (data) => {
         console.log(data, 'data');
-        resolve(responseDate);
+        resolve(responseData);
         hideLoading();
       }
     });
